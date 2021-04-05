@@ -109,7 +109,7 @@ func main() {
 
 	var (
 		sdkManagerPath = filepath.Join(cfg.AndroidHome, "cmdline-tools/latest/bin/sdkmanager")
-		avdManagerPath = filepath.Join(cfg.AndroidHome, "cmdline-tools/latest/bin/bin/avdmanager")
+		avdManagerPath = filepath.Join(cfg.AndroidHome, "cmdline-tools/latest/bin/avdmanager")
 		emulatorPath   = filepath.Join(cfg.AndroidHome, "emulator/emulator")
 
 		pkg     = fmt.Sprintf("system-images;android-%d;%s;%s", cfg.APILevel, cfg.Tag, cfg.Abi)
