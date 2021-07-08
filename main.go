@@ -141,15 +141,9 @@ func main() {
 	}
 
 	var (
-<<<<<<< HEAD
-		sdkManagerPath = filepath.Join(cfg.AndroidHome, "cmdline-tools/tools/bin/sdkmanager")
-		avdManagerPath = filepath.Join(cfg.AndroidHome, "cmdline-tools/tools/bin/avdmanager")
-		emulatorPath   = filepath.Join(cfg.AndroidHome, "emulator/emulator")
-=======
 		sdkManagerPath = filepath.Join(cmdlineToolsPath, "sdkmanager")
 		avdManagerPath = filepath.Join(cmdlineToolsPath, "avdmanager")
 		emulatorPath   = filepath.Join(androidHome, "emulator", "emulator")
->>>>>>> dd09e2e... Updated tool lookup paths for new SDK layout (#23)
 
 		pkg     = fmt.Sprintf("system-images;android-%d;%s;%s", cfg.APILevel, cfg.Tag, cfg.Abi)
 		yes, no = strings.Repeat("yes\n", 20), strings.Repeat("no\n", 20)
